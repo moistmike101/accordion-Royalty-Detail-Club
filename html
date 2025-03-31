@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        .accordion {
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #ccc;
+        }
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        .accordion-header {
+            background: #f1f1f1;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+        }
+        .accordion-header:hover {
+            background: #1470AF;
+            border-color:none;
+        }
+        .accordion-content {
+            display: none;
+            border-top-width: 0px;
+            padding: 0px 15px 15px 15px;
+            background: #fff;
+        }
+        input[type="checkbox"]:checked + .accordion-content {
+            display: block;
+        }
+        .pybutton {
+            background: #1470AF;
+            text-decoration-color: white;
+            padding: 0.4em 1.4em;
+            color: white;
+            border-radius: 10px;
+            border-style:none;
+            url:https://royaltydetailclub.squarespace.com/mini-detail;
+        }
+        .pybutton:hover {
+            background:#0c456b;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+            <label class="accordion-header" for="section1">
+            <h4>Mini Detail</h4></label>
+            <input type="checkbox" id="section1">
+            <div class="accordion-content">
+            <h4>$50 / Mid 60 / Lg 70</h4>
+            <ul>
+            <li>Vacuum</li>
+            <li>Interior Cleaning</li>
+            <li>Wash</li>
+            <li>Rubber Mats Wash</li>
+            <li>Windows</li>
+            <li>Tire Dressing</li>
+            <li>Air Freshener</li>
+            </ul>
+            <button class="pybutton"><a href="https://royaltydetailclub.squarespace.com/mini-detail">INFO</a>
+            </button>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <label class="accordion-header" for="section2">Section 2</label>
+            <input type="checkbox" id="section2">
+            <div class="accordion-content">Content for section 2.</div>
+        </div>
+        <div class="accordion-item">
+            <label class="accordion-header" for="section3">Section 3</label>
+            <input type="checkbox" id="section3">
+            <div class="accordion-content">Content for section 3.</div>
+        </div>
+    </div>
+</body>
+</html>
